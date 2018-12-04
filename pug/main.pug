@@ -1,23 +1,26 @@
 section#main
 	include header
 	.container
-		h1.main_title Подарочные сертификаты
+		h1.main_title.col-md-offset-6 Подарочные сертификаты
 		.row
-			.col-md-6
+			.col-md-6.subtitle_container
+				img(src="img/gift.png", alt="Подарок")#gift
 				h2.main_subtitle Уважаемые подписчики и посетители сайта!
 					br
-					| Теперь есть возможность приобрести подарочный сертификат на оплату любых курсов академии MasterVision номиналом: 1 000р., 3 000р., 5 000р.
+					| Теперь есть возможность приобрести подарочный сертификат на оплату любых курсов академии MasterVision номиналом: 
+					br
+					| 1 000р., 3 000р., 5 000р.
 			.col-md-6
 				.certs_container
 					.cert
 						a(href="img/certs/cert_1.png" data-fancybox="certs")
-							img(src="img/certs/cert_1_min.png", alt="Сертификат на 1 000р.")
+							img.cert_img(src="img/certs/cert_1_min.png", alt="Сертификат на 1 000р.")
 						a(href="https://aleksandrkudryashov1.autoweboffice.ru/?r=ordering/cart/as1&id=2470&clean=true&lg=ru" target="_blank").button Выбрать
 					.cert
 						a(href="img/certs/cert_2.png" data-fancybox="certs")
-							img(src="img/certs/cert_2_min.png", alt="Сертификат 3 000р.")
+							img.cert_img(src="img/certs/cert_2_min.png", alt="Сертификат 3 000р.")
 						a(href="https://aleksandrkudryashov1.autoweboffice.ru/?r=ordering/cart/as1&id=2471&clean=true&lg=ru" target="_blank").button Выбрать
 					.cert
 						a(href="img/certs/cert_3.png" data-fancybox="certs")
-							img(src="img/certs/cert_3_min.png", alt="Сертификат 5 000р.")
+							img.cert_img(src="img/certs/cert_3_min.png", alt="Сертификат 5 000р.")
 						a(href="https://aleksandrkudryashov1.autoweboffice.ru/?r=ordering/cart/as1&id=2472&clean=true&lg=ru" target="_blank").button Выбрать

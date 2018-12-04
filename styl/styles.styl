@@ -1,3 +1,76 @@
+@font-face {
+	font-family: 'OpenSans';
+	src: url('../fonts/OpenSans.eot');
+	src: url('../fonts/OpenSans.eot') format('embedded-opentype'),
+		 url('../fonts/OpenSans.woff2') format('woff2'),
+		 url('../fonts/OpenSans.woff') format('woff'),
+		 url('../fonts/OpenSans.ttf') format('truetype'),
+		 url('../fonts/OpenSans.svg#OpenSans') format('svg');
+	font-display: fallback;
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'OpenSansBold';
+	src: url('../fonts/OpenSansBold.eot');
+	src: url('../fonts/OpenSansBold.eot') format('embedded-opentype'),
+		 url('../fonts/OpenSansBold.woff2') format('woff2'),
+		 url('../fonts/OpenSansBold.woff') format('woff'),
+		 url('../fonts/OpenSansBold.ttf') format('truetype'),
+		 url('../fonts/OpenSansBold.svg#OpenSansBold') format('svg');
+	font-display: fallback;
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'OpenSansCondensedBold';
+	src: url('../fonts/OpenSansCondensedBold.eot');
+	src: url('../fonts/OpenSansCondensedBold.eot') format('embedded-opentype'),
+		 url('../fonts/OpenSansCondensedBold.woff2') format('woff2'),
+		 url('../fonts/OpenSansCondensedBold.woff') format('woff'),
+		 url('../fonts/OpenSansCondensedBold.ttf') format('truetype'),
+		 url('../fonts/OpenSansCondensedBold.svg#OpenSansCondensedBold') format('svg');
+	font-display: fallback;
+	font-weight: 900;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'OpenSansCondensedLight';
+	src: url('../fonts/OpenSansCondensedLight.eot');
+	src: url('../fonts/OpenSansCondensedLight.eot') format('embedded-opentype'),
+		 url('../fonts/OpenSansCondensedLight.woff2') format('woff2'),
+		 url('../fonts/OpenSansCondensedLight.woff') format('woff'),
+		 url('../fonts/OpenSansCondensedLight.ttf') format('truetype'),
+		 url('../fonts/OpenSansCondensedLight.svg#OpenSansCondensedLight') format('svg');
+	font-display: fallback;
+	font-weight: 100;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'OpenSansLight';
+	src: url('../fonts/OpenSansLight.eot');
+	src: url('../fonts/OpenSansLight.eot') format('embedded-opentype'),
+		 url('../fonts/OpenSansLight.woff2') format('woff2'),
+		 url('../fonts/OpenSansLight.woff') format('woff'),
+		 url('../fonts/OpenSansLight.ttf') format('truetype'),
+		 url('../fonts/OpenSansLight.svg#OpenSansLight') format('svg');
+	font-display: fallback;
+	font-weight: 100;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'OpenSansSemibold';
+	src: url('../fonts/OpenSansSemibold.eot');
+	src: url('../fonts/OpenSansSemibold.eot') format('embedded-opentype'),
+		 url('../fonts/OpenSansSemibold.woff2') format('woff2'),
+		 url('../fonts/OpenSansSemibold.woff') format('woff'),
+		 url('../fonts/OpenSansSemibold.ttf') format('truetype'),
+		 url('../fonts/OpenSansSemibold.svg#OpenSansSemibold') format('svg');
+	font-display: fallback;
+	font-weight: 600;
+	font-style: normal;
+}
+
 @import '../css/_css/bootstrap.min.css'
 @import '../css/_css/jquery.fancybox.min.css'
 
@@ -5,7 +78,9 @@
 	margin 0
 	padding 0
 	outline none
-
+body
+	font-family: 'OpenSans';
+	font-size: 16px
 a
 	color: #fefefe
 	&:focus
@@ -47,3 +122,31 @@ button
 		right 0
 		bottom 0
 		cursor pointer
+.button
+	display block
+	margin 0 auto
+	width 100%
+	max-width 150px
+	border-radius: 10px;
+	background-color: #fff
+	height: 40px;
+	line-height: 40px;
+	font-size: 15px;
+	font-family: "OpenSansBold", sans-serif;
+	color: #11191b
+	text-align: center;
+	cursor pointer
+	text-transform: uppercase
+	transition: all .2s ease-in-out
+	&:focus
+		background-color: #fff
+		color #11191b
+		text-decoration: none 
+	&:hover
+		opacity .8
+		color #11191b
+		text-decoration: none
+		background-color: #ffffff
+@import 'parts/main'
+@import 'parts/footer'
+@import 'parts/medias'
